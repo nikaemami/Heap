@@ -57,10 +57,4 @@ else:
   minHeapify(root,root.leftChild(node))
 ```
 
-Finally, the summation that computes the output, is calculated by getting the root of the heap multiple times, to get the smallest values in order:
-
-```ruby
-popped_2 = root.Heap[root.leftChild(root.FRONT)]
-popped_1 = root.Heap[root.FRONT]
-sum+= popped_1 + popped_2 + popped_1 + root.Heap[root.leftChild(root.FRONT)] + root.Heap[root.rightChild(root.FRONT)]
-```
+Finally, the summation that computes the output, is calculated by getting the root of the heap multiple times, to get the smallest values in order, implemented in the while loop in the code above.
